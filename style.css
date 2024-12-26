@@ -1,40 +1,4 @@
 @charset "UTF-8";
-/*!
-Theme Name: Consulting
-Theme URI: http://consulting.stylemixthemes.com/
-Author: StylemixThemes
-Author URI: http://stylemixthemes.com/
-Description: Consulting - Business and Finance WordPress theme. Using Consluting you can easily create a modern website with real content. Easily edit the real content and compose the page layout with drag & drop page builder Consulting is the best ever finance, consulting, brokerage WordPress theme. It���s fully Responsive and Easy to Customize using intuitive Drag & Drop Visual Composer and Theme Options panel in WordPress Customizer.
-Version: 1.2
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: consulting
-Tags: blue, one-column, two-columns, three-columns, four-columns, left-sidebar, right-sidebar, fixed-layout, fluid-layout, responsive-layout, custom-background, custom-colors, custom-header, custom-menu, sticky-post, translation-ready
-
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
-
-Normalizing styles have been helped along thanks to the fine work of
-Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
-*/
-/*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
-# Normalize
-# WordPress Core
-# Layout
-# Header
-# Visual Composer
-# Typography
-# Elements
-# Page 404
-# Responsive
-# Woocommerce
-
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-# Normalize
---------------------------------------------------------------*/
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -7487,6 +7451,10 @@ form.woocommerce-checkout {
     padding-left: 15px !important;
     padding-right: 15px !important; } }
 @media only screen and (max-width: 768px) {
+  .rulon-img {
+    display: none;
+  }
+
   body .vc_call_to_action {
     padding: 16px 30px 15px 30px; }
 
@@ -8526,6 +8494,115 @@ h1,
     background-color: #f9f9f9; /* Цвет фона */
 }
 
+div.wpcf7 {
+	margin: 0;
+	padding: 0;
+}
+
+div.wpcf7-response-output {
+	margin: 2em 0.5em 1em;
+	padding: 0.2em 1em;
+}
+
+div.wpcf7 .screen-reader-response {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(1px, 1px, 1px, 1px);
+	height: 1px;
+	width: 1px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+div.wpcf7-mail-sent-ok {
+	border: 2px solid #398f14;
+}
+
+div.wpcf7-mail-sent-ng {
+	border: 2px solid #ff0000;
+}
+
+div.wpcf7-spam-blocked {
+	border: 2px solid #ffa500;
+}
+
+div.wpcf7-validation-errors {
+	border: 2px solid #f7e700;
+}
+
+.wpcf7-form-control-wrap {
+	position: relative;
+}
+
+span.wpcf7-not-valid-tip {
+	color: #f00;
+	font-size: 1em;
+	font-weight: normal;
+	display: block;
+}
+
+.use-floating-validation-tip span.wpcf7-not-valid-tip {
+	position: absolute;
+	top: 20%;
+	left: 20%;
+	z-index: 100;
+	border: 1px solid #ff0000;
+	background: #fff;
+	padding: .2em .8em;
+}
+
+span.wpcf7-list-item {
+	display: inline-block;
+	margin: 0 0 0 1em;
+}
+
+span.wpcf7-list-item-label::before,
+span.wpcf7-list-item-label::after {
+	content: " ";
+}
+
+.wpcf7-display-none {
+	display: none;
+}
+
+div.wpcf7 .ajax-loader {
+	visibility: hidden;
+	display: inline-block;
+	background-image: url('../../images/ajax-loader.gif');
+	width: 16px;
+	height: 16px;
+	border: none;
+	padding: 0;
+	margin: 0 0 0 4px;
+	vertical-align: middle;
+}
+
+div.wpcf7 .ajax-loader.is-active {
+	visibility: visible;
+}
+
+div.wpcf7 div.ajax-error {
+	display: none;
+}
+
+div.wpcf7 .placeheld {
+	color: #888;
+}
+
+div.wpcf7 .wpcf7-recaptcha iframe {
+	margin-bottom: 0;
+}
+
+div.wpcf7 input[type="file"] {
+	cursor: pointer;
+}
+
+div.wpcf7 input[type="file"]:disabled {
+	cursor: default;
+}
+
+
 .map-container script {
     border-radius: 8px; /* Закругление углов карты */
 }
@@ -8641,3 +8718,13 @@ body {
 .top_bar {
   background: #147042 !important;
 }
+
+.rulon-img {
+  transform: rotate(45deg);
+  left: -5vw;
+  position: absolute;
+  margin-top: 35vh;
+  width: 300px;
+  z-index: -1;
+}
+
