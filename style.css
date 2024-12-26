@@ -7451,7 +7451,7 @@ form.woocommerce-checkout {
     padding-left: 15px !important;
     padding-right: 15px !important; } }
 @media only screen and (max-width: 768px) {
-  .rulon-img {
+  .rulon-img, .rulon-img-right {
     display: none;
   }
 
@@ -7464,9 +7464,6 @@ form.woocommerce-checkout {
   .projects_tabs .tabs {
     float: none;
     margin: 0; }
-
-  #header .header_top, #header .top_nav {
-    display: none; }
 
   .mobile_header {
     display: block; }
@@ -7771,9 +7768,6 @@ form.woocommerce-checkout {
     height: auto; }
     body.header_style_transparent #header:before {
       display: none; }
-
-  .top_bar {
-    display: none; }
 
   body.header_style_dark .logo, body.header_style_white .logo {
     margin: 0 !important; }
@@ -8723,8 +8717,60 @@ body {
   transform: rotate(45deg);
   left: -5vw;
   position: absolute;
+  margin-top: 55vh;
+  width: 300px;
+  z-index: -1;
+}
+
+.rulon-img-right {
+  transform: rotate(-45deg);
+  left: 90%;
+  position: absolute;
   margin-top: 35vh;
   width: 300px;
   z-index: -1;
 }
 
+body {
+  background: #528550 !important;
+}
+
+@media only screen and (max-width: 1300px) {
+  .rulon-img {
+    left: -8vw;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .rulon-img-right {
+    left: 86%;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .rulon-img-right {
+    left: 82%;
+  }
+}
+
+.wpb-wn {
+  margin-top: 200px;
+}
+
+@media only screen and (max-width: 769px) {
+  .wpb-wn {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  .top-head {
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    position: absolute;
+    justify-content: space-between;
+    gap: 10px;
+    margin-right: 20px;
+  }
+}
