@@ -8761,6 +8761,26 @@ body {
   .wpb-wn {
     margin-top: 0;
   }
+
+  .top_bar_info {
+    display: flex !important;
+    flex-direction: column !important;
+    margin-top: 10px !important;
+  }
+
+  .header_top {
+    z-index: 21 !important;
+    padding: 0 !important;
+    position: relative !important;
+  }
+
+  .top-head-n {
+    bottom: 0;
+  }
+
+  .container {
+    min-height: 210px;
+  }
 }
 
 @media only screen and (max-width: 510px) {
