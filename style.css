@@ -8757,6 +8757,20 @@ body {
   margin-top: 200px;
 }
 
+@media only screen and (max-width: 1200px) {
+  .top_bar_info_wr .top_bar_info li {
+    padding: 5px !important;
+    font-size: 12px !important;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .top_bar_info_wr .top_bar_info li {
+    padding: 2px !important;
+    font-size: 10px !important;
+  }
+}
+
 @media only screen and (max-width: 769px) {
   .wpb-wn {
     margin-top: 0;
@@ -8766,6 +8780,11 @@ body {
     display: flex !important;
     flex-direction: column !important;
     margin-top: 10px !important;
+  }
+
+  .top_bar_info_wr .top_bar_info li {
+    padding: 5px !important;
+    font-size: 12px !important;
   }
 
   .header_top {
@@ -8792,5 +8811,11 @@ body {
     justify-content: space-between;
     gap: 10px;
     margin-right: 20px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .map-container {
+    max-width: 80%;
   }
 }
