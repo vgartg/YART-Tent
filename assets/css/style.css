@@ -1243,8 +1243,8 @@ sub{ font-size: .68em; vertical-align: -.2em; }
 
    Удалить при сдаче проекта клиенту:
      1. Этот блок;
-     2. Файл demo-guard.js;
-     3. <script src="demo-guard.js" defer></script> из index.html.
+     2. Файл assets/js/demo-guard.js;
+     3. <script src="assets/js/demo-guard.js" defer></script> из index.html.
    ═══════════════════════════════════════════════════════════════════════ */
 
 html::before, html::after,
