@@ -1,4 +1,4 @@
-# YART-Tent (yart-tent.onrender.com)
+# YART-Tent
 
 ## About
 
